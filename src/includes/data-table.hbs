@@ -1,0 +1,47 @@
+<!-- ################# Please note: ####################### -->
+<!-- How to use the Data Table module: -->
+<!-- This module is set up with special CSS classes in order to make it stack and not mess up our email layout on mobile devices. -->
+<!-- Because of this, we have to hide the column headers on mobile, and inject the text back in to the layout with CSS -->
+<!-- In order for this to work, we must change the "data-label" for the table cells so that they match the column headers. -->
+<!-- ###################################################### -->
+
+<tr>
+    <td class="section">
+        <table class="data-table rounded-top rounded-bottom" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%;">
+            <tr>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 1</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 2</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 3</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 4</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 5</span>
+                </th>
+            </tr>
+            <tr>
+                <td data-label="Category 1" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 2" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 3" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 4" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 5" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>

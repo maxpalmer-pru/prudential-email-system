@@ -1,0 +1,81 @@
+/* Email structure*/
+$email-width: 600px;
+$mobile-breakpoint: 400px;
+
+/* Padding*/
+$padding-large: 20px;
+$padding-medium: 10px;
+$padding-small: 5px;
+$section-padding: $padding-large;
+
+/* Radius settings*/
+$radius-small: 3px;
+$radius-large: 6px;
+
+
+
+/* Blues*/
+$pru-blue: #07639d !default;
+$pru-navy: #002247 !default;
+$pru-light-blue:#98c3de !default;
+$pru-sky-blue: #f2f7fa !default;
+$pru-dark-blue: #2A3643 !default;
+
+/* Secondary*/
+$pru-yellow:#ffd200 !default;
+$pru-green: #297c00 !default;
+$pru-orange:#FF9900 !default;
+$pru-red: #cc3300 !default;
+
+/* Tertiary*/
+$pru-light-green: #dffcda !default;
+$pru-light-orange:#ffe2c0 !default;
+$pru-light-red: #feebee !default;
+
+/* Grays*/
+$gray-base: #000 !default;
+$gray-darker: lighten($gray-base, 13.5%) !default; /* #222*/
+$gray-dark: lighten($gray-base, 20%) !default; /* #333*/
+$gray: lighten($gray-base, 40%) !default; /* #666*/
+$gray-light: lighten($gray-base, 60%) !default; /* #999*/
+$gray-lighter: lighten($gray-base, 80%) !default; /* #ccc*/
+$gray-lighter-extra: lighten($gray-base, 92%) !default; /* #ebebeb*/
+$gray-lightest: #f2f2f2; 
+
+/*Custom campaign colors*/
+$brand-color-primary: $pru-blue !default;
+$brand-color-secondary: $pru-light-blue !default;
+$brand-color-light: $pru-sky-blue !default;
+$brand-color-dark: $pru-navy !default;
+$brand-accent-1: #ffffff !default;
+$brand-accent-2: $pru-yellow !default;
+
+/* Typography*/
+$font-family-headings: 'PruModern', Arial, Helvetica, sans-serif !default;
+$font-family-sans-serif: 'OpenSans', Arial, Helvetica sans-serif !default;
+$font-family-serif: Garamond, Georgia, Times, serif !important;
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: 15px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default;
+$font-size-small: ceil(($font-size-base * 0.8)) !default;
+$font-size-h1: floor($font-size-base * 2) !default;
+$font-size-h2: floor($font-size-base * 1.44) !default;
+$font-size-h3: floor($font-size-base * 1.1) !default;
+$font-size-h4: $font-size-base + 1 !default;
+$font-size-h5: ceil($font-size-base * .8) !default;
+$font-size-h6: ceil($font-size-base * .7) !default;
+
+/*** Unit-less `line-height` for use in components like buttons.*/
+$line-height-base: 1.428571429 !default;
+$line-height-loose: 1.614 !default;
+$line-height-tight: $line-height-base * .80 !default;
+
+/*** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.*/
+$line-height-computed: floor(($font-size-base * $line-height-base)) !default; /* ~20px*/
+
+/*** By default, this inherits from the `<body>`.*/
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
+

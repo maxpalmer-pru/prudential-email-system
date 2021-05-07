@@ -1,0 +1,26 @@
+{
+  "name": "pru-email-system",
+  "version": "1.0.0",
+  "description": "This is a set of grunt tasks that will help someone update and assemble a collection of email snippets and layouts for deployment to a team for email production.",
+  "main": "index.js",
+  "author": "Max Palmer",
+  "license": "ISC",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "assemble": "~0.4.37",
+    "coffeescript": "^2.5.1",
+    "grunt": "^1.3.0",
+    "grunt-combine-media-queries": "^1.0.20",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-line-remover": "0.0.2",
+    "grunt-sass": "^3.1.0",
+    "grunt-strip-css-comments": "^1.3.0",
+    "node-sass": "^5.0.0"
+  },
+  "keywords": []
+}
