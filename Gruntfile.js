@@ -65,7 +65,16 @@ module.exports = function(grunt) {
                 src: ['src/includes/test/*.hbs'],
                 dest: './dist/test/',
                 ext: 'html'
-            }
+            },
+            taxi_snippets: {
+                options: {
+                    layout: 'taxi-wrapper.hbs',
+                    layoutdir: 'src/non-dist-partials/'
+                },
+                src: ['src/includes/*.hbs'],
+                dest: './taxi-snippets/',
+                ext: 'html'
+            },
             layouts: {
                 src: ['src/layouts/*.html'],
                 dest: './dist/layouts/',
@@ -88,15 +97,6 @@ module.exports = function(grunt) {
         },
 
         copy: {
-            default:{
-                files: [{
-                expand: true,
-                flatten: true,
-                src: ['src/images/*'],
-                dest: 'dist/images/',
-                filter: 'isFile'
-            }, ],
-            },
             dw: {
                 files: [{
                     expand: true,
