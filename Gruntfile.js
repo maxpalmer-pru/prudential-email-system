@@ -66,15 +66,6 @@ module.exports = function(grunt) {
                 dest: './dist/test/',
                 ext: 'html'
             },
-            taxi_snippets: {
-                options: {
-                    layout: 'taxi-wrapper.hbs',
-                    layoutdir: 'src/non-dist-partials/'
-                },
-                src: ['src/includes/*.hbs'],
-                dest: './taxi-snippets/',
-                ext: 'html'
-            },
             layouts: {
                 src: ['src/layouts/*.html'],
                 dest: './dist/layouts/',
@@ -124,8 +115,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('watch', ['watch']);
+    grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
     // The default task to run with the `grunt` command.
-    // grunt.registerTask('default', ['assemble']);
 };
