@@ -20,15 +20,13 @@ If you want to have the code snippets continously re-compile as you work on them
 
 `includes:` These are handlebars partials that get compiled into the final layouts and snippets directory.
 
-`includes/test:` These are module snippets for the purposes of testing, that aren't ready for deployment.
-
 `layouts:` These are layout files that node-assemble pieces together from the handlebars files.
-
-`layouts/test:` Test layouts, not ready for deployment.
 
 `non-dist-partials:` This is helper code for the purposes of piecing together the snippets and layouts, that don't get distributed to the email production teams.
 
-`sass` These are the SCSS files that are compiled into our final CSS directory.
+`sass:` These are the SCSS files that are compiled into our final CSS directory.
+
+`coding-guide.html:` This is a guide for the email production teams to gain some tips and insight into how these templates are to be used on production.
 
 
 ### Files will compile into `dist`:
@@ -41,7 +39,8 @@ If you want to have the code snippets continously re-compile as you work on them
 
 `modules:` This is where all the modules will compile into. These modules can be distributed to production teams for deployment into new emails.
 
-`test:` Test files from `src/includes/test` and `src/layouts/test` will end up here.
+## Test modules
+Test files from `src/includes/test` and `src/layouts/test` will compile into `/test/layouts` or `/test/modules/`. These are code snippets that aren't ready for deployment. 
 
 ## Contributing
 

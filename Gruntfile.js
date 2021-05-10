@@ -63,7 +63,7 @@ module.exports = function(grunt) {
             },
             test_snippets: {
                 src: ['src/includes/test/*.hbs'],
-                dest: './dist/test/',
+                dest: './test/modules/',
                 ext: 'html'
             },
             layouts: {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
             },
             test_layouts: {
                 src: ['src/layouts/test/*.html'],
-                dest: './dist/test/',
+                dest: './test/layouts/',
                 ext: 'html'
             },
             dw: {
@@ -88,6 +88,14 @@ module.exports = function(grunt) {
         },
 
         copy: {
+            images: {
+                files: [{
+                    expand: true,
+                    flatten: true,
+                    src: ['src/images/*'],
+                    dest: 'dist/images'
+                }, ],
+            },
             dw: {
                 files: [{
                     expand: true,
