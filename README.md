@@ -2,6 +2,16 @@
  
 ***This is a simple build system that we use to maintain and update code in support of email communication at Prudential.***
 
+## Usage
+
+Clone this repository using `gh repo clone maxpalmer-pru/prudential-email-system`
+
+Run `grunt` to assemble the various code snippets and layouts into the *dist* directory.
+
+***or***
+
+If you want to have the code snippets continously re-compile as you work on them, run `grunt watch` instead. This will watch all the SCSS, layout, and partials files for changes and rebuild on each save. 
+
 ## Files you'll start with in this package
 
 `src/css:` This is compiled CSS that gets inserted into the layouts. You won't need to touch this.
@@ -20,16 +30,6 @@
 
 `sass` These are the SCSS files that are compiled into our final CSS directory.
 
-
-## Usage
-
-Clone this repository using `gh repo clone maxpalmer-pru/prudential-email-system`
-
-Run `grunt` to assemble the various code snippets and layouts into the *dist* directory.
-
-***or***
-
-If you want to have the code snippets continously re-compile as you work on them, run `grunt watch` instead. This will watch all the SCSS, layout, and partials files for changes and rebuild on each save. 
 
 ### Files will compile into `dist`:
 
