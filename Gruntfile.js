@@ -4,6 +4,17 @@ module.exports = function(grunt) {
 
 
     grunt.initConfig({
+
+    compress: {
+      main: {
+        options: {
+          archive: 'Prudential Email Code System.zip'
+        },
+        files: [
+          {src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
+        ]
+      }
+    },
         watch: {
             partials: {
                 files: ['src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
@@ -123,7 +134,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.registerTask('watch', ['watch']);
     grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
+    grunt.registerTask('deploy', ['compress']);
     // The default task to run with the `grunt` command.
 };

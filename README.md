@@ -4,13 +4,12 @@
 
 ## Usage
 
-Clone this repository using `gh repo clone maxpalmer-pru/prudential-email-system`
+1. Clone this repository using `gh repo clone maxpalmer-pru/prudential-email-system`
 
-Run `grunt` to assemble the various code snippets and layouts into the *dist* directory.
-
-***or***
-
-If you want to have the code snippets continously re-compile as you work on them, run `grunt watch` instead. This will watch all the SCSS, layout, and partials files for changes and rebuild on each save. 
+2. Run one of the following grunt tasks:
+- `grunt`: to assemble the various code snippets and layouts into the *dist* directory.
+- `grunt watch`: This will watch all the SCSS, layout, and partials files for changes and rebuild the templates as you work on them.
+– `grunt deploy`: This will zip the `/dist` directory for deployment to an internal server, or emailing to a colleague.
 
 ## Files you'll start with in this package
 
@@ -29,7 +28,7 @@ If you want to have the code snippets continously re-compile as you work on them
 `coding-guide.html:` This is a guide for the email production teams to gain some tips and insight into how these templates are to be used on production.
 
 
-### Files will compile into `dist`:
+### Files will compile into `/dist`:
 
 `dw:` These snippets are compiled for use as Dreamweaver snippets, for teams that still want them.
 
