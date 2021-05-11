@@ -123,7 +123,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.registerTask('testing', ['watch']);
+    grunt.registerTask('watch', ['watch']);
     grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
-    
+    // The default task to run with the `grunt` command.
 };
