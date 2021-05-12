@@ -1,6 +1,6 @@
 /dist
 /node_modules
+/test
 package-lock.json
 package.json
 npm-debug.log
-/test

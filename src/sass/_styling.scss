@@ -135,7 +135,7 @@
 
     a {
         text-decoration: none !important;
-        color: #0066cc;
+        color: $pru-link;
     }
 
     a:hover {
@@ -276,7 +276,9 @@
         border: none;
         background-color: $brand-color-primary;
         text-align: center;
-        color: #ffffff;
+        a {
+            color: $brand-accent-1;
+        }
     }
 
     .button-secondary {
@@ -284,7 +286,9 @@
         border: none;
         text-align: center;
         background-color: #ffffff;
-        color: #1a1d1e;
+        a {
+            color: $gray-darker;
+        }
     }
 
     .button-gold {
@@ -292,7 +296,9 @@
         border: none;
         text-align: center;
         background-color: $pru-yellow;
-        color: #1a1d1e;
+        a {
+            color: $gray-darker;
+        }
     }
 
     .button a {
