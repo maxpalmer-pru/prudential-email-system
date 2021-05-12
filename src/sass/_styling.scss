@@ -212,16 +212,21 @@
         color: $brand-color-primary;
         font-weight: 300;
     }
+    .disclosure-dark-background {
+        .disclosure, .disclosure-large{
+            color: $gray-lighter;
+        }
+    }
     .disclosure {
         color: $gray;
         font-family: $font-family-headings !important;
         font-size: $font-size-small;
-        line-height: $line-height-tight;
+        line-height: $line-height-base;
     }
 
     .disclosure-large {
         @extend .disclosure;
-        font-size: $font-size-small + 2;
+        font-size: $font-size-small + 1.5;
     }
 
     .small {

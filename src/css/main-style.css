@@ -192,16 +192,22 @@ h4 small,
 	font-weight: 300;
 }
 
+.disclosure-dark-background .disclosure,
+.disclosure-dark-background .disclosure-large,
+.disclosure-dark-background .disclosure-large {
+	color: #cccccc;
+}
+
 .disclosure,
 .disclosure-large {
 	color: #666666;
 	font-family: "PruModern", Arial, Helvetica, sans-serif !important;
 	font-size: 12px;
-	line-height: 0.96;
+	line-height: 1.2;
 }
 
 .disclosure-large {
-	font-size: 14px;
+	font-size: 13.5px;
 }
 
 .small {
