@@ -25,7 +25,7 @@
 
 `sass:` These are the SCSS files that are compiled into our final CSS directory.
 
-`coding-guide.html:` This is a guide for the email production teams to gain some tips and insight into how these templates are to be used on production.
+`docs/coding-guide.html:` This is a guide for the email production teams to gain some tips and insight into how these templates are to be used on production.
 
 
 ### Files will compile into `/dist`:
