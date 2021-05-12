@@ -8,8 +8,8 @@
 
 2. Run one of the following grunt tasks:
 - `grunt`: to assemble the various code snippets and layouts into the *dist* directory.
-- `grunt watch`: This will watch all the SCSS, layout, and partials files for changes and rebuild the templates as you work on them.
-– `grunt deploy`: This will zip the `/dist` directory for deployment to an internal server, or emailing to a colleague.
+- `grunt test`: This will watch all the SCSS, layout, and partials files for changes and rebuild the templates as you work on them.
+- `grunt deploy`: This will zip the `/dist` directory for deployment to an internal server, or emailing to a colleague.
 
 ## Files you'll start with in this package
 

@@ -135,7 +135,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.registerTask('watch', ['watch']);
+    grunt.registerTask('test', ['watch']);
     grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
     grunt.registerTask('deploy', ['compress']);
     // The default task to run with the `grunt` command.
