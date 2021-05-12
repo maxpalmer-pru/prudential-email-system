@@ -3,60 +3,45 @@
     @font-face {
         font-display: swap;
         font-family: PruModern;
-        font-style: bold;
-        font-weight: 800;
+        font-weight: 700;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.svg#Prudential-Modern-Bold) format("svg");
-        mso-font-alt: 'Helvetica';
-    }
-
-    @font-face {
-        font-display: block;
-        font-family: PruModern;
-        font-style: condensed;
-        font-weight: 600;
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.svg#Prudential-Modern-Bold-Semicondensed) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: swap;
         font-family: PruModern;
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.svg#Prudential-Modern-Medium) format("svg");
+        font-weight: 300;
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.eot);
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
         font-weight: 400;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.svg#opensans-regular) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
         font-weight: 600;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.svg#opensans-semibold) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.svg#opensans-bold) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
@@ -145,7 +130,7 @@
         font-family: $font-family-sans-serif;
         margin-bottom: $padding-medium;
         margin-top: 0;
-        color: $gray-darker;
+        color: $gray-dark;
     }
 
     a {
@@ -176,14 +161,22 @@
     .h1,
     .h2,
     .h3,
-    .h4 {
+    {
         color: $brand-color-dark;
         font-family: $font-family-headings !important;
         margin-top: 0;
         margin-bottom: 0px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: $line-height-base;
         font-size: 13px;
+        letter-spacing: $letter-spacing-tight;
+
+        small {
+            color: $brand-color-dark;
+            font-weight: 300;
+            /*font-size: 75%;*/
+            font-size: 100%;
+        }
     }
 
     .h1 {
@@ -191,12 +184,6 @@
         font-family: $font-family-headings !important;
         margin-bottom: $padding-medium;
         margin-top: 30px;
-
-        small {
-            color: $brand-color-primary;
-            font-weight: normal;
-            font-size: 75%;
-        }
 
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 24px !important;
@@ -206,7 +193,7 @@
     .h2 {
         font-size: $font-size-h2 !important;
         font-family: $font-family-headings !important;
-
+        letter-spacing: $letter-spacing-tight +.2;
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 18px !important;
         }*/
@@ -215,22 +202,16 @@
     .h3 {
         font-size: $font-size-h3 !important;
         font-family: $font-family-headings !important;
-
+        letter-spacing: $letter-spacing-tight +.6;
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 16px !important;
         }*/
     }
 
-    .h4 {
-        font-size: $font-size-h4 !important;
-        font-family: $font-family-headings !important;
-    }
-
-    .h1-subhead {
+    .subhead{
         color: $brand-color-primary;
-        font-family: $font-family-headings !important;
+        font-weight: 300;
     }
-
     .disclosure {
         color: $gray;
         font-family: $font-family-headings !important;
@@ -316,11 +297,13 @@
 
     .button a {
         font-family: $font-family-sans-serif;
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: 400;
         display: block;
         text-decoration: none !important;
         line-height: 50px;
         text-align: center;
+        letter-spacing: $letter-spacing-loose;
     }
 
     .button-primary:hover {
@@ -549,7 +532,7 @@
             content: attr(data-label);
             border-radius: 3px;
             float: left;
-            font-weight: bold;
+            font-weight: 600;
             color: $gray;
             font-family: $font-family-headings !important;
             font-size: $font-size-small;
