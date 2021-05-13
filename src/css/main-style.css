@@ -21,7 +21,7 @@
 	font-family: OpenSans;
 	font-weight: 400;
 	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot);
-	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype");
+	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273//fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype");
 	mso-font-alt: 'Helvetica';
 }
 
@@ -30,7 +30,7 @@
 	font-family: OpenSans;
 	font-weight: 600;
 	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot);
-	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype");
+	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273//fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype");
 	mso-font-alt: 'Helvetica';
 }
 
@@ -39,7 +39,7 @@
 	font-family: OpenSans;
 	font-weight: 700;
 	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot);
-	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype");
+	src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype");
 	mso-font-alt: 'Helvetica';
 }
 
@@ -119,12 +119,20 @@ li {
 }
 
 a {
-	text-decoration: none !important;
+	text-decoration: none;
 	color: #0066cc;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 a:hover {
-	text-decoration: underline !important;
+	text-decoration: underline;
+}
+
+a:focus {
+	transition: all 0.12s cubic-bezier(0.63, 0.09, 1, 1) 0s;
+	border: 3px solid;
 }
 
 .header,
@@ -232,7 +240,7 @@ h4 small,
 
 .button td {
 	transition: all .15s linear;
-	border-radius: 3px;
+	border-radius: 25px;
 	text-decoration: none !important;
 	font-size: 15px;
 }
@@ -257,18 +265,16 @@ h4 small,
 }
 
 .button-secondary {
-	border: 1px solid #999999 !important;
-	border: none;
+	border: 1px solid #0066cc !important;
 	text-align: center;
 	background-color: #ffffff;
 }
 
 .button-secondary a {
-	color: #222222;
+	color: #0066cc;
 }
 
 .button-gold {
-	border: 1px solid #cccccc !important;
 	border: none;
 	text-align: center;
 	background-color: #ffd200;
@@ -282,7 +288,7 @@ h4 small,
 	font-family: "OpenSans", Arial, Helvetica sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	display: block;
+	display: inline-block;
 	text-decoration: none !important;
 	line-height: 50px;
 	text-align: center;
@@ -290,15 +296,38 @@ h4 small,
 }
 
 .button-primary:hover {
-	background-color: #005b90 !important;
+	background-color: #1C73CF !important;
 }
 
 .button-secondary:hover {
-	background-color: #ebebeb !important;
+	background-color: #1C73CF1A !important;
 }
 
 .button-gold:hover {
-	background-color: #cca800 !important;
+	background-color: #ffdd40 !important;
+}
+
+.text-link {
+	color: #0066cc;
+	position: relative;
+	text-decoration: none !important;
+}
+
+.text-link:before {
+	position: absolute;
+	bottom: -.3rem;
+	width: 2.5rem;
+	height: .2rem;
+	content: "";
+	background-color: #0066cc;
+	transition: .22s ease-in-out;
+	box-sizing: border-box;
+	max-width: 100% !important;
+}
+
+.text-link:hover:before {
+	width: 100%;
+	text-decoration: none !important;
 }
 
 .bkg-blue {
