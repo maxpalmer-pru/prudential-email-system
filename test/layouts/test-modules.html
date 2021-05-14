@@ -147,11 +147,16 @@ a:focus {
 }
 
 .header,
+.header-white,
 .preheader {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 20px;
 	padding-left: 20px;
+}
+
+.header {
+	background-image: linear-gradient(0deg, rgba(0, 31, 69, 0.3) 0%, rgba(0, 31, 69, 0.7) 100%);
 }
 
 .preheader {
@@ -933,10 +938,11 @@ div {
     <!-- ###### Content modules will be includeed above here ###### -->
     
 <tr>
-    <td class="zero-spacing" bgcolor="#ffffff">
+    <td class="zero-spacing" bgcolor="#f2f2f2">
         <table role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
             <tr>
-                <td bgcolor="#001f45" style="border-radius: 60px 0 0 0;" height="60">
+                <td height="60">
+                	<div style="background-color: #ffffff; border-radius: 0 0 0 60px; width:100%; height:60px;"></div>
                 </td>
             </tr>
         </table>
