@@ -4,7 +4,42 @@
 <!-- Because of this, we have to hide the column headers on mobile, and inject the text back in to the layout with CSS -->
 <!-- In order for this to work, we must change the "data-label" for the table cells so that they match the column headers. -->
 <!-- ###################################################### -->
-
+<style>
+@media screen and (max-width: 400px) {
+    .data-table {
+    border: 0px;
+    }
+    .data-table th {
+    display: none;
+    border: none;
+    height: 0px;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    max-width: 0px;
+    max-height: 0px;
+    }
+    .data-table tr {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    }
+    .data-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    }
+    .data-table td:before {
+    content: attr(data-label);
+    border-radius: 3px;
+    float: left;
+    font-weight: 600;
+    color: $gray;
+    font-family: $font-family-headings !important;
+    font-size: $font-size-small;
+    line-height: $line-height-tight;
+    }
+}
+</style>
 <tr>
     <td class="section">
         <table class="data-table rounded-top rounded-bottom" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%;">
