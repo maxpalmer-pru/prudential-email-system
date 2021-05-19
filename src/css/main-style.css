@@ -264,6 +264,7 @@ h4 small,
 	border: none;
 	background-color: #007bc3;
 	text-align: center;
+	color: #ffffff;
 }
 
 .button-primary a {
@@ -274,6 +275,7 @@ h4 small,
 	border: 1px solid #0066cc !important;
 	text-align: center;
 	background-color: #ffffff;
+	color: #0066cc;
 }
 
 .button-secondary a {
