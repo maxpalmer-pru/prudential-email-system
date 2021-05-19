@@ -456,7 +456,46 @@
     .background-primary {
         background-color: $brand-color-primary;
     }
-
+    .notch-blue {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #007bc3; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-navy {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #001f45; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-gray {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #f2f2f2; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-light-blue {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #E2F4FF; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-gold {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #ffd200; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
     /* Spacing */
     .headline-spacing {
         padding-bottom: 20px;
