@@ -161,6 +161,7 @@
     }
     .preheader {
         background-color: $gray-lightest;
+        text-align: right;
     }
 
     h1,
@@ -336,26 +337,46 @@
     }
 
     .text-link {
-    color: $pru-link;
-    position: relative; 
-    text-decoration: none !important; 
-    &:before {
-        position: absolute;
-        bottom: -.3rem;
-        width: 2.5rem;
-        height: .2rem;
-        content: "";
-        background-color: $pru-link;
-        transition: .22s ease-in-out;
-        box-sizing: border-box;
-        max-width: 100%!important;
+        padding: 0 !important;
+        text-align: left;
+        text-transform: uppercase;
+        color: $pru-link;
+        text-decoration: none;
+        font-size: 13px;
+        .line{
+            background-color: $pru-link;
+            height: 2px;
+            width: 30px;
+            display: block;
+            text-align: left !important;
+            transition: .22s ease-in-out;
         }
-    &:hover:before {
-        width: 100%;
-        text-decoration: none !important; 
+        p {
+            margin-bottom: 2px;
+            line-height: 1;
+            display: block;
+            font-size: 13px;
+            color: $pru-link;
+            text-decoration: none;
+            }
+            :hover{
+                text-decoration: none;
+            }
+            :hover ~ .line{
+                transition: .22s ease-in-out;
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                font-size: 13px;
+            }
     }
+    .center {
+        text-align: center;
     }
-
+    .left {
+        text-align: left;
+    }
     /*Background colors*/
     .bkg-blue {
         background-color: $pru-blue !important;
