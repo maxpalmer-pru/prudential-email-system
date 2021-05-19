@@ -450,7 +450,9 @@
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
     }
-
+    .evo-radius {
+        border-radius: 0 0 60px 0;
+    }
     .background-primary {
         background-color: $brand-color-primary;
     }
