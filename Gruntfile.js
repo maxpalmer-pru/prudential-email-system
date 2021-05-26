@@ -69,7 +69,10 @@ module.exports = function(grunt) {
             layouts: {
                 src: ['src/layouts/*.html'],
                 dest: './dist/layouts/',
-                ext: 'html'
+                ext: 'html',
+                options: {
+                    partials:['dist/modules/*.html']
+                }
             },
             test_layouts: {
                 src: ['src/layouts/test/*.html'],
