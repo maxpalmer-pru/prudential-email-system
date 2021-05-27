@@ -229,14 +229,14 @@
     }
     .disclosure {
         color: $gray;
-        font-family: $font-family-headings !important;
-        font-size: $font-size-small;
-        line-height: $line-height-base;
+        font-family: $font-family-sans-serif !important;
+        font-size: $font-size-small - 1;
+        line-height: 1.3;
     }
 
     .disclosure-large {
         @extend .disclosure;
-        font-size: $font-size-small + 1.5;
+        font-size: $font-size-small + 1;
     }
 
     .small {

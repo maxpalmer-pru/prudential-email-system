@@ -63,7 +63,7 @@ $font-family-serif: Garamond, Georgia, Times, serif !important;
 $font-family-base: $font-family-sans-serif !default;
 $font-size-base: 15px !default;
 $font-size-large: ceil(($font-size-base * 1.25)) !default;
-$font-size-small: ceil(($font-size-base * 0.8)) !default;
+$font-size-small: ceil(($font-size-base - 2)) !default;
 $font-size-h1: floor($font-size-base * 2) !default;
 $font-size-h2: floor($font-size-base * 1.44) !default;
 $font-size-h3: floor($font-size-base * 1.1) !default;
