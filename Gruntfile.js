@@ -132,16 +132,16 @@ module.exports = function(grunt) {
               files: [{
                 // Use dynamic extend name
                 expand: true,
-                // Source dir
-                cwd: 'dist/',
+                cwd: 'dist/layouts',
                 // Match files
-                src: ['layouts/*'],
+                src: ['*.html'],
                 // Output files
-                dest: 'layouts/',
+                dest: 'dist/layouts',
                 ext: '.html'
               }]
             }
-          }
+          },
+
     });
 
     // Load the Assemble plugin.
