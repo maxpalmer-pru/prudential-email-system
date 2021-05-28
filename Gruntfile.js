@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         watch: {
             partials: {
                 files: ['src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
-                tasks: ['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw']
+                tasks: ['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']
             },
         },
         sass: {
@@ -117,7 +117,31 @@ module.exports = function(grunt) {
             dist: {
                 src: ["dist"]
             }
-        }
+        },
+        insert_timestamp: {
+            // Sample usage with css files
+            layouts: {
+              options: {
+                prepend: true,
+                append: false,
+                format: 'mmmm dd, yyyy',
+                template: '<!-- ! Template compiled on: {timestamp} -->',
+                datetime: new Date(),
+                insertNewlines: true
+              },
+              files: [{
+                // Use dynamic extend name
+                expand: true,
+                // Source dir
+                cwd: 'dist/',
+                // Match files
+                src: ['layouts/*'],
+                // Output files
+                dest: 'layouts/',
+                ext: '.html'
+              }]
+            }
+          }
     });
 
     // Load the Assemble plugin.
@@ -129,7 +153,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-insert-timestamp');
     grunt.registerTask('test', ['watch']);
-    grunt.registerTask('default',['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw']);
+    grunt.registerTask('default',['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']);
     // The default task to run with the `grunt` command.
 };
