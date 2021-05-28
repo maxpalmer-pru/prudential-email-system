@@ -540,11 +540,15 @@
     .section-bottom-small {
         padding-top: $padding-medium;
         padding-bottom: $padding-small;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .section-bottom-large {
         padding-top: $padding-medium;
         padding-bottom: $padding-large;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .callout {

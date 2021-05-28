@@ -495,11 +495,15 @@ hr {
 .section-bottom-small {
 	padding-top: 10px;
 	padding-bottom: 5px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .section-bottom-large {
 	padding-top: 10px;
 	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .callout {
