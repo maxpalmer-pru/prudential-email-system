@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         watch: {
             partials: {
                 files: ['src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
-                tasks: ['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']
+                tasks: ['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']
             },
         },
         sass: {
@@ -111,8 +111,11 @@ module.exports = function(grunt) {
             },
         },
         clean: {
-            yourTarget: {
+            dw: {
                 src: ["dist/dw/*.html"]
+            },
+            dist: {
+                src: ["dist"]
             }
         }
     });
@@ -127,6 +130,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.registerTask('test', ['watch']);
-    grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
+    grunt.registerTask('default',['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw']);
     // The default task to run with the `grunt` command.
 };
