@@ -268,7 +268,7 @@ h4 small,
 }
 
 .button-primary a {
-	color: #ffffff;
+	color: #ffffff !important;
 }
 
 .button-secondary {
@@ -279,7 +279,7 @@ h4 small,
 }
 
 .button-secondary a {
-	color: #0066cc;
+	color: #0066cc !important;
 }
 
 .button-gold {
@@ -289,7 +289,7 @@ h4 small,
 }
 
 .button-gold a {
-	color: #222222;
+	color: #222222 !important;
 }
 
 .button a {
