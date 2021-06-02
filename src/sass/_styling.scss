@@ -444,19 +444,19 @@
     }
 
     .rounded-top {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
+        border-top-left-radius: $radius-large;
+        border-top-right-radius: $radius-large;
     }
 
     .rounded-bottom {
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: $radius-large;
+        border-bottom-right-radius: $radius-large;
     }
     .evo-radius-footer {
         border-radius: 0 0 0 30px;
     }
     .evo-radius-hero {
-        border-radius: 0 30px 0 0;
+        border-radius: 0 0 30px 0;
     }
     .background-primary {
         background-color: $brand-color-primary;
