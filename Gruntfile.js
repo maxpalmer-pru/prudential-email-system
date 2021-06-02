@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         watch: {
             partials: {
-                files: ['src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
+                files: ['src/css/*', 'src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
                 tasks: ['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']
             },
         },
