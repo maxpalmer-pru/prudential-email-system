@@ -141,6 +141,16 @@ module.exports = function(grunt) {
               }]
             }
           },
+          compress: {
+            main: {
+              options: {
+                archive: 'Prudential Email Code System.zip'
+              },
+              files: [
+                {src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
+              ]
+            }
+          },
 
     });
 
@@ -154,7 +164,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-insert-timestamp');
+    grunt.loadNpmTasks('grunt-contrib-compress');
     grunt.registerTask('test', ['watch']);
     grunt.registerTask('default',['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']);
+    grunt.registerTask('deploy', ['compress']);
     // The default task to run with the `grunt` command.
 };
