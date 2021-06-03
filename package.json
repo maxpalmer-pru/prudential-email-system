@@ -22,5 +22,8 @@
     "grunt-strip-css-comments": "^1.3.0",
     "node-sass": "^5.0.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "grunt-insert-timestamp": "^0.2.0"
+  }
 }

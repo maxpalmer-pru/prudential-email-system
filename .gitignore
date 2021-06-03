@@ -1,3 +1,9 @@
 /dist
+/node_modules
 /test
+package-lock.json
+package.json
+npm-debug.log
 .DS_Store
+Gruntfile.js
+src/layouts/.DS_Store

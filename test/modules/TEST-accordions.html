@@ -3,8 +3,11 @@
 
     label {
         display: block;
-        border-top: 1px solid #cccccc;
+        border: 1px solid #0066CC21;
+        border-radius: 0 12px 0 12px;
+        background-color: #F6F9FD;
         padding: 10px 10px !important;
+        margin: 10px auto 0 auto;
         text-transform: none !important;
         letter-spacing: normal !important;
         transition: 0.5s background-color cubic-bezier(0.22, 1, 0.36, 1);
@@ -15,50 +18,35 @@
     label .arrow {
         float: right;
         font-size: 24px;
-        color: #999999;
+        color: #007bc3;
         font-family: 'PruModern', Helvetica, Arial, sans-serif;
         line-height: .5;
         box-sizing: border-box;
         padding: 0 8px;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        -webkit-animation-name: pulse;
-        animation-name: pulse;
         }
 
         .accordion-body{
             overflow: none;
         }
-/*    input#accordion1-input ~ label#accordion1-label .arrow,
-    input#accordion2-input ~ label#accordion2-label .arrow,
-    input#accordion3-input ~ label#accordion3-label .arrow {
-        transform: rotate(0deg);
-        transition: .5s;
-    }
-        
-    input#accordion1-input:checked ~ label#accordion1-label .arrow,
-    input#accordion2-input:checked ~ label#accordion2-label .arrow,
-    input#accordion3-input:checked ~ label#accordion3-label .arrow{
-        transform: rotate(90deg);
-    }*/
 
     .accordion:checked + label.accordion-control{
-        background-color: #F2F7FA;
+        background-color: #E2F4FF;
         transition: .5s background-color  cubic-bezier(0.33, 1, 0.68, 1);
+        border-radius: 0 12px 0 0;
     }
         
     label:hover {
-        outline: 2px #07639d solid;
+        outline: 2px #007BC3 solid;
+        cursor: pointer;
         }
         
     input {
-        display: none;
+        /*display: none;*/
+        height: 0;
+        width: 0;
+        opacity: 0;
         position: absolute;
-        visibility: hidden;
+        /*visibility: hidden;*/
     }
   
     input#accordion1-input ~ #accordion1-content,
@@ -80,60 +68,8 @@
         }
 
     .accordion-body{
-        background-color: #F2F7FA;
-        -webkit-box-shadow: inset 0px -6px 3px -4px rgba(193,193,193,1);
-        -moz-box-shadow: inset 0px -6px 3px -4px rgba(193,193,193,1);
-        box-shadow: inset 0px -6px 3px -4px rgba(193,193,193,1);
-    }
-
-    /*the animation definition*/
-    @-webkit-keyframes pulse {
-      0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
-      20% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-        color: #07639d;
-      }
-      30% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
-      100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
-    }
-    @keyframes pulse {
-      0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        -ms-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
-      20% {
-        -webkit-transform: scale3d(1.05, 1.05, 1.05);
-        -ms-transform: scale3d(1.05, 1.05, 1.05);
-        transform: scale3d(1.05, 1.05, 1.05);
-        color: #07639d;
-      }
-      30% {
-        -webkit-transform: scale3d(1, 1, 1);
-        -ms-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
-      100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        -ms-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-        color: #c1c1c1;
-      }
+        background-color: #E2F4FF;
+        border-radius: 0 0 0 12px;
     }
 
 
@@ -148,7 +84,7 @@
                         <tr>
                             <td>
                                 <!-- Accordion 1 -->
-                                <input type="radio" name="method" id="accordion1-input" class="accordion">
+                                <input type="radio" name="method" id="accordion1-input" class="accordion" tabindex="0">
                                 <label for="accordion1-input" class="center-me-on-break accordion-control" id="accordion1-label">
                                     <span class="arrow">+</span>
                                     <h3><p>Accordion title 1</p></h3>
@@ -174,7 +110,7 @@
                                     </table>
                                 </div>
                                 <!-- Accordion 2 -->
-                                <input type="radio" name="method" id="accordion2-input" class="accordion">
+                                <input type="radio" name="method" id="accordion2-input" class="accordion" tabindex="0">
                                 <label for="accordion2-input" class="center-me-on-break accordion-control" id="accordion2-label">
                                     <span class="arrow">+</span>
                                     <h3><p>Accordion title 2</p></h3>
@@ -200,7 +136,7 @@
                                     </table>
                                 </div>
                                 <!-- Accordion 3 -->
-                                <input type="radio" name="method" id="accordion3-input" class="accordion">
+                                <input type="radio" name="method" id="accordion3-input" class="accordion" tabindex="0">
                                 <label for="accordion3-input" class="center-me-on-break accordion-control" id="accordion3-label">
                                     <span class="arrow">+</span>
                                     <h3><p>Accordion title 3</p></h3>

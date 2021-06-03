@@ -4,21 +4,10 @@ module.exports = function(grunt) {
 
 
     grunt.initConfig({
-
-    compress: {
-      main: {
-        options: {
-          archive: 'Prudential Email Code System.zip'
-        },
-        files: [
-          {src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
-        ]
-      }
-    },
         watch: {
             partials: {
-                files: ['src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
-                tasks: ['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']
+                files: ['src/css/*', 'src/sass/*', 'src/layouts/*','src/layouts/test/*', 'src/non-dist-partials/*', 'src/includes/*','src/includes/test/*'],
+                tasks: ['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']
             },
         },
         sass: {
@@ -80,7 +69,10 @@ module.exports = function(grunt) {
             layouts: {
                 src: ['src/layouts/*.html'],
                 dest: './dist/layouts/',
-                ext: 'html'
+                ext: 'html',
+                options: {
+                    partials:['dist/modules/*.html']
+                }
             },
             test_layouts: {
                 src: ['src/layouts/test/*.html'],
@@ -119,10 +111,37 @@ module.exports = function(grunt) {
             },
         },
         clean: {
-            yourTarget: {
+            dw: {
                 src: ["dist/dw/*.html"]
+            },
+            dist: {
+                src: ["dist"]
             }
-        }
+        },
+        insert_timestamp: {
+            // Sample usage with css files
+            layouts: {
+              options: {
+                prepend: true,
+                append: false,
+                format: 'mmmm dd, yyyy',
+                template: '<!-- ! Template compiled on: {timestamp} -->',
+                datetime: new Date(),
+                insertNewlines: true
+              },
+              files: [{
+                // Use dynamic extend name
+                expand: true,
+                cwd: 'dist/layouts',
+                // Match files
+                src: ['*.html'],
+                // Output files
+                dest: 'dist/layouts',
+                ext: '.html'
+              }]
+            }
+          },
+
     });
 
     // Load the Assemble plugin.
@@ -134,9 +153,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-combine-media-queries');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-insert-timestamp');
     grunt.registerTask('test', ['watch']);
-    grunt.registerTask('default',['sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean']);
-    grunt.registerTask('deploy', ['compress']);
+    grunt.registerTask('default',['clean:dist','sass', 'stripCssComments', 'lineremover', 'cmq', 'assemble', 'copy', 'clean:dw', 'insert_timestamp']);
     // The default task to run with the `grunt` command.
 };

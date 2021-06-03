@@ -3,60 +3,45 @@
     @font-face {
         font-display: swap;
         font-family: PruModern;
-        font-style: bold;
-        font-weight: 800;
+        font-weight: 700;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.svg#Prudential-Modern-Bold) format("svg");
-        mso-font-alt: 'Helvetica';
-    }
-
-    @font-face {
-        font-display: block;
-        font-family: PruModern;
-        font-style: condensed;
-        font-weight: 600;
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-boldcond-webfont.svg#Prudential-Modern-Bold-Semicondensed) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-bold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: swap;
         font-family: PruModern;
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-medium-webfont.svg#Prudential-Modern-Medium) format("svg");
+        font-weight: 300;
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.eot);
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/prudentialmodern-light-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
         font-weight: 400;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.svg#opensans-regular) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273//fonts/opensans-regular-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-regular-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
         font-weight: 600;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.svg#opensans-semibold) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273//fonts/opensans-semibold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-semibold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
     @font-face {
         font-display: fallback;
         font-family: OpenSans;
-        font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot);
-        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.svg#opensans-bold) format("svg");
+        src: url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff2) format("woff2"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.woff) format("woff"), url(https://cdn.pficdn.com/pru-com-fed/19.37.273/fonts/opensans-bold-webfont.ttf) format("truetype");
         mso-font-alt: 'Helvetica';
     }
 
@@ -70,7 +55,7 @@
         margin-right: 0 !important;
         margin-left: 0 !important;
         padding-top: 0;
-        padding-bottom: 0;
+        padding-bottom: 0;  
         padding-right: 0;
         padding-left: 0;
         background-color: $gray-lightest;
@@ -145,28 +130,38 @@
         font-family: $font-family-sans-serif;
         margin-bottom: $padding-medium;
         margin-top: 0;
-        color: $gray-darker;
+        color: $gray-dark;
     }
 
     a {
-        text-decoration: none !important;
-        color: #0066cc;
+        text-decoration: none;
+        color: $pru-link;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
     }
-
     a:hover {
-        text-decoration: underline !important;
+        text-decoration: underline;
+        }
+    a:focus{
+        transition: all 0.12s cubic-bezier(0.63, 0.09, 1, 1) 0s;
+        border: 3px solid;
     }
 
     .header,
+    .header-white,
     .preheader {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-right: $padding-large;
         padding-left: $padding-large;
     }
-
+    .header {
+        background-color: $pru-blue;
+    }
     .preheader {
         background-color: $gray-lightest;
+        text-align: right;
     }
 
     h1,
@@ -176,14 +171,22 @@
     .h1,
     .h2,
     .h3,
-    .h4 {
+    {
         color: $brand-color-dark;
         font-family: $font-family-headings !important;
         margin-top: 0;
         margin-bottom: 0px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: $line-height-base;
         font-size: 13px;
+        letter-spacing: $letter-spacing-tight;
+
+        small {
+            color: $brand-color-dark;
+            font-weight: 300;
+            /*font-size: 75%;*/
+            font-size: 100%;
+        }
     }
 
     .h1 {
@@ -191,12 +194,6 @@
         font-family: $font-family-headings !important;
         margin-bottom: $padding-medium;
         margin-top: 30px;
-
-        small {
-            color: $brand-color-primary;
-            font-weight: normal;
-            font-size: 75%;
-        }
 
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 24px !important;
@@ -206,7 +203,7 @@
     .h2 {
         font-size: $font-size-h2 !important;
         font-family: $font-family-headings !important;
-
+        letter-spacing: $letter-spacing-tight +.2;
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 18px !important;
         }*/
@@ -215,32 +212,31 @@
     .h3 {
         font-size: $font-size-h3 !important;
         font-family: $font-family-headings !important;
-
+        letter-spacing: $letter-spacing-tight +.6;
         /*@media screen and (max-width: $mobile-breakpoint) {
             font-size: 16px !important;
         }*/
     }
 
-    .h4 {
-        font-size: $font-size-h4 !important;
-        font-family: $font-family-headings !important;
-    }
-
-    .h1-subhead {
+    .subhead{
         color: $brand-color-primary;
-        font-family: $font-family-headings !important;
+        font-weight: 300;
     }
-
+    .disclosure-dark-background {
+        .disclosure, .disclosure-large{
+            color: $gray-lighter;
+        }
+    }
     .disclosure {
         color: $gray;
-        font-family: $font-family-headings !important;
-        font-size: $font-size-small;
-        line-height: $line-height-tight;
+        font-family: $font-family-sans-serif !important;
+        font-size: $font-size-small - 1;
+        line-height: 1.3;
     }
 
     .disclosure-large {
         @extend .disclosure;
-        font-size: $font-size-small + 2;
+        font-size: $font-size-small + 1;
     }
 
     .small {
@@ -271,7 +267,7 @@
 
         td {
             transition: all .15s linear;
-            border-radius: 3px;
+            border-radius: 25px;
             text-decoration: none !important;
             font-size: 15px;
 
@@ -293,48 +289,98 @@
 
     .button-primary {
         border: none;
-        background-color: $brand-color-primary;
+        background-color: $pru-link !important;
         text-align: center;
         color: #ffffff;
+        a {
+            color: $brand-accent-1 !important;
+        }
     }
 
     .button-secondary {
-        border: 1px solid $gray-light !important;
-        border: none;
+        border: 1px solid $pru-link !important;
         text-align: center;
         background-color: #ffffff;
-        color: #1a1d1e;
+        color: $pru-link;
+        a {
+            color: $pru-link !important;
+        }
     }
 
     .button-gold {
-        border: 1px solid $gray-lighter !important;
         border: none;
         text-align: center;
         background-color: $pru-yellow;
-        color: #1a1d1e;
+        a {
+            color: $gray-darker !important;
+        }
     }
 
     .button a {
         font-family: $font-family-sans-serif;
-        font-size: 15px;
-        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
         text-decoration: none !important;
         line-height: 50px;
         text-align: center;
+        letter-spacing: $letter-spacing-loose;
     }
-
     .button-primary:hover {
-        background-color: darken($brand-color-primary, 10%) !important;
+        background-color: #1C73CF !important;
     }
 
     .button-secondary:hover {
-        background-color: $gray-lighter-extra !important;
+        background-color: #1C73CF1A !important;
     }
 
     .button-gold:hover {
-        background-color: darken($pru-yellow, 10%) !important;
+        background-color: #ffdd40 !important;
     }
 
+    .text-link {
+        padding: 0 !important;
+        text-align: left;
+        text-transform: uppercase;
+        color: $pru-link;
+        text-decoration: none;
+        font-size: 13px;
+        .line{
+            background-color: $pru-link;
+            height: 2px;
+            width: 30px;
+            display: block;
+            text-align: left !important;
+            transition: .22s ease-in-out;
+        }
+        p {
+            margin-bottom: 2px;
+            line-height: 1;
+            display: block;
+            font-size: 13px;
+            color: $pru-link;
+            text-decoration: none;
+            }
+            :hover{
+                text-decoration: none;
+            }
+            :hover ~ .line{
+                transition: .22s ease-in-out;
+                width: 100%;
+            }
+            a{
+                text-decoration: none;
+                font-size: 13px;
+                letter-spacing: $letter-spacing-loose;
+                font-weight: 600;
+            }
+    }
+    .center {
+        text-align: center;
+    }
+    .left {
+        text-align: left;
+    }
     /*Background colors*/
     .bkg-blue {
         background-color: $pru-blue !important;
@@ -398,19 +444,63 @@
     }
 
     .rounded-top {
-        border-top-left-radius: 6px;
-        border-top-right-radius: 6px;
+        border-top-left-radius: $radius-large;
+        border-top-right-radius: $radius-large;
     }
 
     .rounded-bottom {
-        border-bottom-left-radius: 6px;
-        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: $radius-large;
+        border-bottom-right-radius: $radius-large;
     }
-
+    .evo-radius-footer {
+        border-radius: 0 0 0 30px;
+    }
+    .evo-radius-hero {
+        border-radius: 0 0 30px 0;
+    }
     .background-primary {
         background-color: $brand-color-primary;
     }
-
+    .notch-blue {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #007bc3; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-navy {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #001f45; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-gray {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #f2f2f2; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-light-blue {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #E2F4FF; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
+    .notch-gold {
+        height: 0px; 
+        width: 0; 
+        border-top: 15px solid #ffd200; 
+        border-right: 15px solid transparent; 
+        border-left: 15px solid transparent; 
+        border-bottom: 0;
+    }
     /* Spacing */
     .headline-spacing {
         padding-bottom: 20px;
@@ -450,11 +540,15 @@
     .section-bottom-small {
         padding-top: $padding-medium;
         padding-bottom: $padding-small;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .section-bottom-large {
         padding-top: $padding-medium;
         padding-bottom: $padding-large;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .callout {
@@ -519,42 +613,6 @@
 
 
     @media screen and (max-width: $mobile-breakpoint) {
-        .data-table {
-            border: 0px;
-        }
-
-        .data-table th {
-            display: none;
-            border: none;
-            height: 0px;
-            margin: 0px;
-            overflow: hidden;
-            padding: 0px;
-            max-width: 0px;
-            max-height: 0px;
-        }
-
-        .data-table tr {
-            display: block;
-            width: 90%;
-            margin: 20px auto;
-        }
-
-        .data-table td {
-            border-bottom: 1px solid #ddd;
-            display: block;
-        }
-
-        .data-table td:before {
-            content: attr(data-label);
-            border-radius: 3px;
-            float: left;
-            font-weight: bold;
-            color: $gray;
-            font-family: $font-family-headings !important;
-            font-size: $font-size-small;
-            line-height: $line-height-tight;
-        }
 
 
         .emailwrapto100pcsmall {
@@ -566,5 +624,37 @@
             max-width: 100% !important;
             width: 100% !important;
             height: auto !important;
+        }
+        .data-table {
+        border: 0px;
+        }
+        .data-table th {
+        display: none;
+        border: none;
+        height: 0px;
+        margin: 0px;
+        overflow: hidden;
+        padding: 0px;
+        max-width: 0px;
+        max-height: 0px;
+        }
+        .data-table tr {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        }
+        .data-table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        }
+        .data-table td:before {
+        content: attr(data-label);
+        border-radius: 3px;
+        float: left;
+        font-weight: 600;
+        color: $gray;
+        font-family: $font-family-headings !important;
+        font-size: $font-size-small;
+        line-height: $line-height-tight;
         }
     }
