@@ -341,7 +341,6 @@
     .text-link {
         padding: 0 !important;
         text-align: left;
-        text-transform: uppercase;
         color: $pru-link;
         text-decoration: none;
         font-size: 13px;
@@ -373,6 +372,7 @@
                 font-size: 13px;
                 letter-spacing: $letter-spacing-loose;
                 font-weight: 600;
+                text-transform: uppercase;
             }
     }
     .center {

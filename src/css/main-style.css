@@ -318,7 +318,6 @@ h4 small,
 .text-link {
 	padding: 0 !important;
 	text-align: left;
-	text-transform: uppercase;
 	color: #0066cc;
 	text-decoration: none;
 	font-size: 13px;
@@ -356,6 +355,7 @@ h4 small,
 	font-size: 13px;
 	letter-spacing: 0.6px;
 	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .center {
