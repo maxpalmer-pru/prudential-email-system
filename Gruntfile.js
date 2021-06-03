@@ -147,7 +147,7 @@ module.exports = function(grunt) {
                 archive: 'Prudential Email Code Snippets.zip'
               },
               files: [
-                {src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
+                {src: ['dist/**', 'docs/*'], dest: '/'}, // includes files in path and its subdirs
               ]
             }
           },
