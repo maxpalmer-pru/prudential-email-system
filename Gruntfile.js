@@ -144,7 +144,7 @@ module.exports = function(grunt) {
           compress: {
             main: {
               options: {
-                archive: 'Prudential Email Code System.zip'
+                archive: 'Prudential Email Code Snippets.zip'
               },
               files: [
                 {src: ['dist/**'], dest: '/'}, // includes files in path and its subdirs
