@@ -514,17 +514,15 @@
                                 </div>
                                 <!-- End Accessibility note -->
                                 <h3>H1 Tag</h3>
-                                <p>If using an H1 tag with a subhead, we style the subhead with a <code>&lt;span></code> within the <code>&lt;h1></code> tag, to keep it compliant for accessibility.</p>
-                                <p class="alert alert-warning"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> Be careful to not break the H1 header tag! There can <strong>only be one</strong> <code>&lt;h1></code> tag per email, so make sure the subhead is inside the <code>&lt;h1></code>.</p>
+                                <p>If creating a double-weighted H1 headline, we style the ligher portion  with a <code>&lt;small></code> within the <code>&lt;h1></code> tag, to keep it compliant for accessibility.</p>
                                 <pre>
                                         <code class="language-html">
                                             <textarea>
-                                                <h1 class="h1">This is an H1 headline.
-                                                    <br>
-                                                    <span style="color: #07639d; font-weight: normal;">
-                                                        <small>H1 subhead: Pay off your headline here.</small>
-                                                    </span>
-                                                </h1>
+                                                <tr>
+                                                    <td align="center">
+                                                        <h1 class="h1"><small>This a two line H1 headline example, where we</small> highlight the emotional benefit.</h1>
+                                                    </td>
+                                                </tr>
                                             </textarea>
                                         </code>
                                     </pre>
@@ -565,7 +563,7 @@
                             <div class="well">
                                 <h3>Background color classes</h3>
                                 <p>The following classes are used for callouts and certain other content modules to change their background colors. </p>
-                                <p class="alert alert-warning"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> These shoud be applied BEFORE any other classes on a table.</p>
+                                <p class="alert alert-warning"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> These should be applied BEFORE any other classes on a table.</p>
                                 <div class="panel panel-default">
                                     <div class="panel-body">
                                         <div class="img-rounded bkg-blue" style="margin: 0 20px; width: 30px; height: 30px; display: inline-block;"></div>
