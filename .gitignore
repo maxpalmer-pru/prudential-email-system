@@ -2,5 +2,4 @@ dist
 node_modules
 test
 npm-debug.log
-.DS_Store
-src/layouts/.DS_Store
+**/.DS_Store
