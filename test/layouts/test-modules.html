@@ -644,43 +644,6 @@ div {
 	height: auto !important;
 }
 
-.data-table {
-	border: 0px;
-}
-
-.data-table th {
-	display: none;
-	border: none;
-	height: 0px;
-	margin: 0px;
-	overflow: hidden;
-	padding: 0px;
-	max-width: 0px;
-	max-height: 0px;
-}
-
-.data-table tr {
-	display: block;
-	width: 90%;
-	margin: 20px auto;
-}
-
-.data-table td {
-	border-bottom: 1px solid #ddd;
-	display: block;
-}
-
-.data-table td:before {
-	content: attr(data-label);
-	border-radius: 3px;
-	float: left;
-	font-weight: 600;
-	color: #666666;
-	font-family: "PruModern", Arial, Helvetica, sans-serif !important;
-	font-size: 13px;
-	line-height: 0.96;
-}
-
 }
 
 
@@ -804,6 +767,126 @@ td {
 </tr>
 
     <!-- ###### Content modules will be includeed starting here ###### -->
+    <!-- ################# Please note: ####################### -->
+<!-- How to use the Data Table module: -->
+<!-- This module is set up with special CSS classes in order to make it stack and not mess up our email layout on mobile devices. -->
+<!-- Because of this, we have to hide the column headers on mobile, and inject the text back in to the layout with CSS -->
+<!-- In order for this to work, we must change the "data-label" for the table cells so that they match the column headers. -->
+<!-- ###################################################### -->
+<style>
+@media screen and (max-width: 400px) {
+    .data-table {
+        border: 0px;
+    }
+
+    .data-table th {
+        display: none;
+        border: none;
+        height: 0px;
+        margin: 0px;
+        overflow: hidden;
+        padding: 0px;
+        max-width: 0px;
+        max-height: 0px;
+    }
+
+    .data-table tr {
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .data-table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+    }
+
+    .data-table td:before {
+        content: attr(data-label);
+        border-radius: 3px;
+        float: left;
+        font-weight: 600;
+        color: #666666;
+        font-family: "PruModern", Arial, Helvetica, sans-serif !important;
+        font-size: 13px;
+        line-height: 0.96;
+    }
+    body[data-outlook-cycle] th{
+        display: table-cell !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        height: auto !important;
+        max-height: auto !important;
+        max-width: auto !important;
+    }
+    body[data-outlook-cycle] .data-table tr {
+        display: table-row !important;
+        width: auto !important;
+        margin: auto !important;
+    }
+    body[data-outlook-cycle] .data-table td {
+        border-bottom: 1px solid #ddd;
+        display: table-cell !important;
+    }
+    div > u + .body th{
+        display: table-cell !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        height: auto !important;
+        max-height: auto !important;
+        max-width: auto !important;
+        }
+    div > u + .body .data-table tr {
+        display: table-row !important;
+        width: auto !important;
+        margin: auto !important;
+    }
+    div > u + .body .data-table td {
+        border-bottom: 1px solid #ddd;
+        display: table-cell !important;
+    }
+    }
+</style>
+<tr>
+    <td class="section">
+        <table class="data-table rounded-top rounded-bottom" width="100%" border="0" cellspacing="0" cellpadding="0" style="min-width:100%;">
+            <tr>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 1</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 2</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 3</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 4</span>
+                </th>
+                <th class="bkg-blue" scope="col" align="center" style="padding: 6px; border: 1px white solid;">
+                    <span class="disclosure" style="color: #ffffff;">Category 5</span>
+                </th>
+            </tr>
+            <tr>
+                <td data-label="Category 1" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 2" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 3" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 4" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+                <td data-label="Category 5" class="bkg-light-gray" align="center" style="padding: 6px; border: 1px #ffffff solid;">
+                    <span class="disclosure">Item</span>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
     <style>
     /* accordion stuff */
 
